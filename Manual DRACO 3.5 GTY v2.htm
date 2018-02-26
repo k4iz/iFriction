@@ -1,0 +1,2427 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Manual v2 für DRACO Version 3.5 GTY</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 1 6 1 0 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@PMingLiU";
+	panose-1:2 1 6 1 0 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Überschrift 1 Zchn";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria",serif;
+	color:#365F91;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:11.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:22.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Kopfzeile Zchn";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Fußzeile Zchn";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:15.0pt;
+	margin-left:0cm;
+	border:none;
+	padding:0cm;
+	font-size:26.0pt;
+	font-family:"Cambria",serif;
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0cm;
+	font-size:26.0pt;
+	font-family:"Cambria",serif;
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Titel Zchn";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0cm;
+	font-size:26.0pt;
+	font-family:"Cambria",serif;
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Titel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:15.0pt;
+	margin-left:0cm;
+	border:none;
+	padding:0cm;
+	font-size:26.0pt;
+	font-family:"Cambria",serif;
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Untertitel Zchn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	color:#4F81BD;
+	letter-spacing:.75pt;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Sprechblasentext Zchn";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria",serif;
+	color:#365F91;
+	font-weight:bold;}
+span.SprechblasentextZchn
+	{mso-style-name:"Sprechblasentext Zchn";
+	mso-style-link:Sprechblasentext;
+	font-family:"Tahoma",sans-serif;}
+span.KopfzeileZchn
+	{mso-style-name:"Kopfzeile Zchn";
+	mso-style-link:Kopfzeile;}
+span.FuzeileZchn
+	{mso-style-name:"Fußzeile Zchn";
+	mso-style-link:Fußzeile;}
+span.TitelZchn
+	{mso-style-name:"Titel Zchn";
+	mso-style-link:Titel;
+	font-family:"Cambria",serif;
+	color:#17365D;
+	letter-spacing:.25pt;}
+span.UntertitelZchn
+	{mso-style-name:"Untertitel Zchn";
+	mso-style-link:Untertitel;
+	font-family:"Cambria",serif;
+	color:#4F81BD;
+	letter-spacing:.75pt;
+	font-style:italic;}
+span.berschrift1Zchn
+	{mso-style-name:"Überschrift 1 Zchn";
+	mso-style-link:"Überschrift 1";
+	font-family:"Cambria",serif;
+	color:#365F91;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:841.95pt 21.0cm;
+	margin:14.2pt 33.9pt 21.3pt 49.65pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DE link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span style='position:absolute;z-index:251572224;margin-left:
+6px;margin-top:3px;width:530px;height:952px'><img width=424 height=762
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image001.gif"
+alt="r&#13;&#10;&#13;&#10;Diagnostics Reporting Application for Commercial Operation&#13;&#10;MANUAL V2 FÜR DRACO VERSION 3.5 GTY&#13;&#10;Gerhard Bregler, DFGPES, Juni 2015&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;"></span><span
+style='position:absolute;z-index:251573248;margin-left:6px;margin-top:0px;
+width:186px;height:953px'><img width=149 height=762
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image002.gif"
+alt="Projekt Controlling auf Basis EXCEL und SAP-BW"></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<b><span style='font-size:12.0pt;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'><b><span style='font-size:12.0pt'>&nbsp;</span></b></p>
+
+<p class=MsoTocHeading>Inhalt</p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc421100596">1.<span
+style='color:windowtext;text-decoration:none'>      </span>Einleitung<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>4</span></a></span></p>
+
+<p class=MsoToc1><a href="#_Toc421100597">1.1.<span style='color:windowtext;
+text-decoration:none'>       </span>Voraussetzungen für die erfolgreiche
+Umsetzung dieser Anleitung<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>4</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100598">1.2.<span style='color:windowtext;
+text-decoration:none'>       </span>Hauptmerkmale von DRACO<span
+style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>4</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100599">1.2.1.<span style='color:windowtext;
+text-decoration:none'>        </span>Die wichtigsten Merkmale im Overview<span
+style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>6</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100600">1.2.2.<span style='color:windowtext;
+text-decoration:none'>        </span>Die wichtigsten Merkmale im Cash Flow<span
+style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>7</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100601">1.2.3.<span style='color:windowtext;
+text-decoration:none'>        </span>Gewerkemappen<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>9</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100602">2.<span style='color:windowtext;
+text-decoration:none'>      </span>Quelldatei anlegen<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>10</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100603">3.<span style='color:windowtext;
+text-decoration:none'>      </span>Projekt anlegen<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>16</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100604">3.1.<span style='color:windowtext;
+text-decoration:none'>       </span>Projekt-MASTER<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>16</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100605">3.2.<span style='color:windowtext;
+text-decoration:none'>       </span>QUELL-Datei definieren<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>16</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100606">3.3.<span style='color:windowtext;
+text-decoration:none'>       </span>Programmmeldungen<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>17</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100607">3.4.<span style='color:windowtext;
+text-decoration:none'>       </span>Cash Flow: „Nächsten Monat“<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>21</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100608">3.5.<span style='color:windowtext;
+text-decoration:none'>       </span>PMR Graphik an Projekt anpassen (in
+CashFlow)<span style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>23</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100609">4.<span style='color:windowtext;
+text-decoration:none'>      </span>Projekt bearbeiten<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>27</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100610">4.1.<span style='color:windowtext;
+text-decoration:none'>       </span>Gewerkemappen bearbeiten<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>27</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100611">4.2.<span style='color:windowtext;
+text-decoration:none'>       </span>Schaltflächen Sprungfunktionen<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>31</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100612">5.<span style='color:windowtext;
+text-decoration:none'>      </span>Gewerkemappe Contingency erstmalig bearbeiten.<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>33</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100613">6.<span style='color:windowtext;
+text-decoration:none'>      </span>Contingency Rundown<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>35</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100614">7.<span style='color:windowtext;
+text-decoration:none'>      </span>Projekt aktualisieren – QUELL-Datei<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>35</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100615">8.<span style='color:windowtext;
+text-decoration:none'>      </span>Projekt aktualisieren – MASTER-Datei<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>37</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100616">8.1.<span style='color:windowtext;
+text-decoration:none'>       </span>Control-Datei<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>37</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100617">8.2.<span style='color:windowtext;
+text-decoration:none'>       </span>Diagnose Overview<span style='color:windowtext;
+display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>39</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100618">8.3.<span style='color:windowtext;
+text-decoration:none'>       </span>Schritt 1<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>41</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100619">8.4.<span style='color:windowtext;
+text-decoration:none'>       </span>Schritt 2<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>42</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100620">8.5.<span style='color:windowtext;
+text-decoration:none'>       </span>Geplante Bestellungen<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>43</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100621">8.6.<span style='color:windowtext;
+text-decoration:none'>       </span>Worauf muss ich achten<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>46</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100622">8.7.<span style='color:windowtext;
+text-decoration:none'>       </span>Anpassung Cost Summary<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>50</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100623">8.8.<span style='color:windowtext;
+text-decoration:none'>       </span>Cost Summary: erzeugen PMR-Datenblatt<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>53</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100624">9.<span style='color:windowtext;
+text-decoration:none'>      </span>Control-Datei speichern, Arbeits-und
+Monatsversion erzeugen<span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>54</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100625">10.<span style='color:windowtext;
+text-decoration:none'>        </span>Vorbereitung des nächsten Monats<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>55</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100626">11.<span style='color:windowtext;
+text-decoration:none'>        </span>Zusammenfassung der Arbeitsschritte:<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>57</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100627">12.<span style='color:windowtext;
+text-decoration:none'>        </span>Funktionen und Anzeigen<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>58</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100628">12.1.<span style='color:windowtext;
+text-decoration:none'>         </span>Funktion PSP-Struktur<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>58</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100629">12.2.<span style='color:windowtext;
+text-decoration:none'>         </span>Funktion Yellow Budget<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>61</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100630">12.2.1.<span style='color:windowtext;
+text-decoration:none'>      </span>Anpassungen im CashFlow<span
+style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>62</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100631">12.2.2.<span style='color:windowtext;
+text-decoration:none'>      </span>Anpassungen in GTY-Invest und –Cost
+(identisch)<span style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>63</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100632">12.3.<span style='color:windowtext;
+text-decoration:none'>         </span>Funktion Change Register<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>66</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100633">12.4.<span style='color:windowtext;
+text-decoration:none'>         </span>Funktion Controls Budget<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>66</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100634">12.5.<span style='color:windowtext;
+text-decoration:none'>         </span>Funktion Sekundärstruktur (WP)<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>67</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100635">12.6.<span style='color:windowtext;
+text-decoration:none'>         </span>Funktion Lieferantenauswertung<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>71</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100636">12.7.<span style='color:windowtext;
+text-decoration:none'>         </span>Funktion „LIST ALL BOOKINGS“<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>72</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100637">12.8.<span style='color:windowtext;
+text-decoration:none'>         </span>Anzeige Freie Mittel<span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>73</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100638">12.9.<span style='color:windowtext;
+text-decoration:none'>         </span>Gewerkemappe: Anzeige Werkstattaufträge
+(WA)<span style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>73</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100639">12.10.<span style='color:windowtext;
+text-decoration:none'>       </span>Overview: Anzeige Werkstattaufträge<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>76</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100640">12.11.<span style='color:windowtext;
+text-decoration:none'>       </span>Anzeige Jahresscheiben<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>77</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100641">12.12.<span style='color:windowtext;
+text-decoration:none'>       </span>Anzeige bei fehlenden/stornierten Belegen<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>78</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc421100642">12.13.<span style='color:windowtext;
+text-decoration:none'>       </span>Fortschrittsanzeige<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>81</span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;font-family:"Calibri",sans-serif'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100596"></a><a
+name="_Ref417039180"><span style='font-family:"Calibri",sans-serif'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Einleitung</span></a></h1>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100597"></a><a
+name="_Ref346017238"></a><a name="_Ref346017227"></a><a name="_Ref346017199"></a><a
+name="_Ref346017186"><span style='font-family:"Calibri",sans-serif'>1.1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Voraussetzungen für
+die erfolgreiche Umsetzung dieser Anleitung</span></a></h1>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Grundkenntnisse Windows 7</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Kenntnisse im Projektcontrolling und der Terminologie</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Kenntnisse im Umgang und der Terminologie von SAP R3 und SAP-BW</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Zugang zu SAP P06</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Verständnis des Contingency-Rundown für Roche-Projekte</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='background:yellow'>Fortgeschrittene Kenntnisse in
+EXCEL</span></b> und der dort verwendeten Terminologie und Formeln.</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Sicherer Umgang mit Kopier- und Einfügefunktion von Windows<br>
+(Copy/Paste = „guttenbergen“ <span style='font-family:Wingdings'>J</span>)</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100598"><span style='font-family:
+"Calibri",sans-serif'>1.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Hauptmerkmale von
+DRACO</span></a></h1>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'>Funktionsprinzip<br>
+Bei DRACO handelt es sich um eine EXCEL-basierte Anwendung für ein effektives
+und schnelles Projektcontrolling auf Basis von SAP-BW Daten. Diese
+Datenauswertung umfasst alle Angaben für:</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Forecast</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Projektbudgets Partial Green, Full Green und
+Yellow</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Bestellungen, GePS und SAP</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Lieferungen</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Interne und externe Engineering-Leistungen</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Werkstattauträge</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Buchungstechnische Sondervorgänge (Endlieferkennzeichen,
+Kontenbereinigungen, etc.)</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'>Die Datenausgabe erfolgt in den
+BW-Standardbericht CX17n welcher speziell für die Anwendung als Quelldatei für
+DRACO angepasst wurde.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><img width=817 height=566
+id="Grafik 64" src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image003.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>Hauptbestandteile des DRACO sind</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Übersichtsblätter wie z. B.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'> </span></span>Overview</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'> </span></span>CashFlow</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'> </span></span>Etc.</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Gewerkemappen</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+61.2pt;text-indent:-25.2pt'><a name="_Toc421100599"><span style='font-family:
+"Calibri",sans-serif'>1.2.1.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-family:"Calibri",sans-serif'>Die wichtigsten Merkmale im Overview</span></a></h1>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Listung aller PSP-Elemente und Beschreibung</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Darstellung Forecast Vormonat (OLD)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Darstellung Forecast aktueller Monat (NEW)</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Darstellung Budgetwert Yellow (Blätter GTY – <b><i>G</i></b>reen
+<b><i>T</i></b>o <b><i>Y</i></b>ellow)</span></p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;line-height:normal'><img
+width=998 height=443 id="Grafik 16"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image004.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+61.2pt;text-indent:-25.2pt'><a name="_Toc421100600"><span style='font-family:
+"Calibri",sans-serif'>1.2.2.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-family:"Calibri",sans-serif'>Die wichtigsten Merkmale im Cash Flow</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Darstellung von
+IST und PLANUNG des Projektes über dessen gesamte Laufzeit in Monatsschritten.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=960
+height=229 id="Grafik 71"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image005.jpg"></p>
+
+<span style='font-size:11.0pt;font-family:"Calibri",sans-serif'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:7.1pt;text-indent:-7.1pt;line-height:normal'>Ausgabe der für den
+PMR (<b><u><span style='font-size:12.0pt'>P</span></u></b>roject <b><u><span
+style='font-size:12.0pt'>M</span></u></b>onthly <b><u><span style='font-size:
+12.0pt'>R</span></u></b>eport) benötigten graphischen Darstellung des Projektes.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=458
+height=330 id="Grafik 27"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image006.gif">  <img width=456
+height=334 id="Grafik 31"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image007.gif"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+61.2pt;text-indent:-25.2pt'><a name="_Toc421100601"><span style='font-family:
+"Calibri",sans-serif'>1.2.3.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-family:"Calibri",sans-serif'>Gewerkemappen</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Für jedes
+PSP-Element wird eine separate Mappe angelegt. Diese zeigt alle auf diesem
+PSP-Element durchgeführten Buchungen an incl. der angelegten internen
+Werkstattaufträge.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=340
+height=180 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image008.jpg"
+align=left hspace=12><img width=394 height=256 id="Grafik 52"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image009.jpg"><img width=568
+height=254 id="Grafik 112"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image010.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100602"></a><a
+name="_Ref421098231"></a><a name="_Ref421098220"></a><a name="_Ref421098201"><span
+style='font-family:"Calibri",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Quelldatei anlegen</span></a></h1>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'>Excel mit BexAnalyzer starten</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Datei QUELLE
+öffnen</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;line-height:normal'><img
+width=716 height=258 id="Grafik 8"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image011.jpg"></p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;line-height:normal'>Abb. Zeigt Dateiversion
+Stand April 2015. Die QUELL-Datei Version 3.4 ist mit <b>Vorgängerversionen der
+MASTER-Datei kompatibel</b>. Ggf. neueste Version anwenden.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>„Variablen-Eingabe“
+öffnen</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=738
+height=158 id="Grafik 1"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image012.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>SAP Logon: P06^^SSO
+selektieren</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=418
+height=268 id="Grafik 2"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image013.jpg"> Anmelden <img
+width=469 height=279 id="Grafik 17"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image014.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Variablenfeld wird
+eingeblendet, Vorhandene Variable für „Projekt“ und „Periode“ durch eigene
+Werte ersetzen.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=638
+height=593 id="Grafik 19"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image015.jpg"><br>
+Eingabeformat „Projekt“: [<i>I.0xxx1</i>];[<i>I.0xxx2</i>];[<i>I.0xxx3</i>];[<i>I.0xxx4</i>];[<i>I.0xxx5</i>];[<i>I.0xxxn</i>]
+usw.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Wichtig: nach <b><span
+style='color:red'>„;“</span></b> kein Leerzeichen</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Eingabeformat <b>PERIODE</b>
+[<i>MonatJahr</i>]</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=470
+height=327 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image016.jpg"
+align=left hspace=12>Option: <b>PRÜFEN</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Dann <b>OK</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Verbindung zu BW
+wird aufgebaut. Die Daten der selektierten Projekte werden geladen. Das kann
+mehrere Minuten dauern.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Folgende Daten
+stehen nach Download zur Verfügung:</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:4.0cm;text-indent:-4.0cm;line-height:normal'><b>Projektliste</b>                          Liste
+aller selektierten Projekte</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:4.0cm;text-indent:-4.0cm;line-height:normal'><b>Projektstruktur</b>                   Alle
+PSP-Elemente der selektierten Projekte</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:4.0cm;text-indent:-4.0cm;line-height:normal'><b>WAs</b>                                       Alle
+Werkstattaufträge der selektierten Projekte</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:4.0cm;text-indent:-4.0cm;line-height:normal'><b>Bestellungen</b>                       Alle
+Bestellungen der selektierten Projekte</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:4.0cm;text-indent:-4.0cm;line-height:normal'><b>ZCCI</b>                                       Detailauflistung
+<i>aller Buchungen</i> der selektierten Projekte</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:4.0cm;text-indent:-4.0cm;line-height:normal'><b>PIVOT_PSP</b>                          Pivot-Tabelle
+zur schnellen Übersicht über die PSP-Elemente in einem Projekt</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:4.0cm;text-indent:-4.0cm;line-height:normal'><b>PIVOT_Lieferant</b>                 Pivot-Tabelle
+zur schnellen Übersicht über die Lieferanten in einem Projekt</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:4.0cm;text-indent:-4.0cm;line-height:normal'><b><span
+style='color:red'>WICHTIG:</span></b>                             Die Daten der
+Pivot-Tabellen werden <b>nicht automatisch geladen</b>. Um die aktuellen
+BW-Daten zu laden, Click auf <b>„Daten aktualisieren“.</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:78.0pt;text-indent:-78.0pt;line-height:normal'><span
+style='position:absolute;z-index:-1895912448;left:0px;margin-left:-7px;
+margin-top:2285px;width:1278px;height:88px'><img width=1022 height=70
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image017.gif"></span><b>Hinweis:</b>                 Die
+beiden Pivot-Tabellen eignen sich sehr gut, um einen schnellen Überblick aber
+auch Details zu einem Projekt zu erhalten, ohne dass dazu eine MASTER-Datei
+angelegt werden muss. Die richtige Nutzung setzt allerdings Grundkenntnisse im
+Umgang mit Pivot-Tabellen voraus. Diese werden hier nicht gesondert
+beschrieben.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:78.0pt;text-indent:-78.0pt;line-height:normal'><img width=759
+height=364 id="Grafik 67"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image018.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=413
+height=91 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image019.jpg"
+align=left hspace=12>Datei in einem innerhalb des Projektcontrollings allgemein
+zugänglichen Ordner speichern (für den Vertretungsfall). Im Namen die Datei
+deutlich als QUELLE und eigenem NAMEN definieren.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Beispiel: </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Datei schließen
+&gt; QUELL-Datei ist erstellt.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>EXCEL beenden.
+Hintergrund: um Probleme zu vermeiden ist es sinnvoll, dass das PlugIn des
+BexAnalyzers bei der jetzt folgenden folgenden Projektbearbeitung mit der
+Masterdatei NICHT aktiv ist.</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100603"><span style='font-family:
+"Calibri",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></a><img width=510 height=137
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image020.jpg" align=left
+hspace=12><span style='font-family:"Calibri",sans-serif'>Projekt anlegen</span></h1>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100604"><span style='font-family:
+"Calibri",sans-serif'>3.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Projekt-MASTER</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Datei kopieren
+(STRG-C) und im Verzeichnis für das Projektcontrolling ablegen (STRG-V). Datei
+jetzt öffnen (sie ist schreibgeschützt).</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;line-height:normal'>Click auf
+Projekt Setup<br>
+<img width=642 height=237 id="Grafik 93"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image021.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100605"><span style='font-family:
+"Calibri",sans-serif'>3.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>QUELL-Datei
+definieren</span></a></h1>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;line-height:normal'>Click auf
+„Project Setup“</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:14.4pt;text-indent:
+-18.0pt;line-height:normal'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span><img width=300 height=298
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image022.jpg" align=left
+hspace=12><img width=286 height=236
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image023.jpg" align=left
+hspace=12>Startpunkt des Projektes festlegen (Monat und Jahr)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:14.4pt;text-indent:
+-18.0pt;line-height:normal'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Name und Verzeichnis der QUELLE definieren</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:14.4pt;text-indent:
+-18.0pt;line-height:normal'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Ein wenig Zeit lassen, dann werden alle in der QUELLE definierten
+Projekte angezeigt. OPTION: durch halten der STRG-Taste können <b>mehrere
+Projekte</b> in einer Controlldatei zusammengefasst werden, als sog.
+Multi-Projekt.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:14.4pt;text-indent:
+-18.0pt;line-height:normal'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Pfade für Arbeitsdatei („Zwischenstand“) und</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:14.4pt;text-indent:-18.0pt;
+line-height:normal'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Monatsabschluss definieren. IdR ist das das entsprechende Verzeichnis im
+Projektlaufwerk.<br>
+Sollte versehentlich kein Projekt oder mindestens ein Projekt selektiert
+selektiert werden, so erkennt DRACO das.</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;line-height:normal'>Falls
+nachstehende Abfrage erscheint &gt; NEIN</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100606"><span style='font-family:
+"Calibri",sans-serif'>3.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></a><img width=392 height=283
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image024.jpg" align=left
+hspace=12><span style='font-family:"Calibri",sans-serif'>Programmmeldungen</span></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=298
+height=109 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image025.jpg"
+align=left hspace=12>Ergebnis:          Die gesamte PSP-Struktur des
+selektierten Projektes wird in den Sheets <b>OVERVIEW</b> und <b>CASH FLOW</b>
+eingetragen. </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=294
+height=161 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image026.jpg"
+align=left hspace=12><b>OVERVIEW und CashFlow</b>           Alle PSP-Elemente
+der selektierten Projekte.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><b>Overview</b>: Projekt
+aktualisieren</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=314
+height=312 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image027.jpg"
+align=left hspace=12>Hinweis für die Anlage und erstmalige Aktualisierung von
+Großprojekten:<br>
+Die Funktion ist ausgelegt auf die Anlage von max. 100 Arbeitsmappen
+(=PSP-Elemente). Wenn das anzulegende Projekt mehr als 100 Elemente aufweist,
+so unterbricht die Programmierung die Bearbeitung nach 100 Elementen, führt sie
+aber in einer 2. Aktualisierung fort. Bitte den Bildschirmanweisungen folgen.<br>
+Großprojekte sollten auf 64Bit-Systemen und –Software angelegt oder erstmalig
+aktualisiert werden. </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Programmmeldung</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Ergebnis: Für
+jedes PSP-Element wurde eine Gewerkemappe angelegt.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=620
+height=305 id="Grafik 103"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image028.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Hinweis:           Das
+Template der MASTER-Datei beinhaltet voreingestellte Projektwerte, welche an
+das anzulegende Projekt angepasst werden müssen</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=925
+height=424 id="Grafik 108"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image029.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=738
+height=421 id="Grafik 105"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image030.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Siehe auch Funktion
+Yellow Budget, Seite 61.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Gesamt<b><u>projektbudget</u></b>
+mit STRG-C kopieren und <u>Werte einfügen</u> in Forecast<b> OLD</b>.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=251
+height=342 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image031.jpg"
+align=left hspace=12><img width=734 height=276 id="Grafik 110"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image032.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:226.7pt;margin-bottom:
+14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Werte aus
+OLD eintragen in <b>PREVIOUS MONTH (NEW)</b> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:226.7pt;margin-bottom:
+14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Die Werte
+aus Previous Month werden im Verlauf der Projektbearbeitung immer dann
+benötigt, wenn außerhalb des normalen Update-Rhythmus (z. B. statt am
+Monatsende zur Monatsmitte) eine Projektbearbeitung erfolgt.</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100607"></a><a
+name="_Ref346011064"></a><a name="_Ref346010278"></a><a name="_Ref346010268"><span
+style='font-family:"Calibri",sans-serif'>3.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Cash Flow: „Nächsten
+Monat</span></a><span style='font-family:"Calibri",sans-serif'>“</span></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>In die Mappe Cash
+Flow wechseln und Click auf die Schaltfläche.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=462
+height=516 id="Grafik 125"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image033.jpg">      <img
+width=345 height=514 id="Grafik 126"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image034.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:49.65pt;text-indent:-49.65pt;line-height:normal'>Ergebnis:    Die
+IST-Werte werden im ersten definierten Monat des Projektes eingetragen, <b>ACTUAL</b>&nbsp;<b>MONTH</b>
+springt um einen Monat weiter.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100608"><span style='font-family:
+"Calibri",sans-serif'>3.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></a><span style='position:relative;z-index:251702272;left:-2px;
+top:0px;width:1280px;height:367px'><img width=1024 height=294
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image035.jpg"></span><br
+clear=ALL>
+<span style='font-family:"Calibri",sans-serif'>PMR Graphik an Projekt anpassen
+(in CashFlow)</span></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>Anpassen folgender Zellen:</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Summe Budget/Yellow Budget</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Summe Contingency</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Verteilung Green-Budget (muss 100 % ergeben)</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Verteilung Yellow-Budget (muss 100 % ergeben)</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><img width=1007 height=462
+id="Grafik 113" src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image036.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><img width=823 height=505
+id="Grafik 118" src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image037.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>Siehe auch 12.2, Funktion
+Yellow Budget, Seite 61</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>Empfehlung:    IdR wurde vor der
+Erstellung des DRACO ein CA oder ECA (<b><span style='font-size:14.0pt;
+line-height:115%'>E</span></b>lectronic <b><span style='font-size:14.0pt;
+line-height:115%'>C</span></b>redit <b><span style='font-size:14.0pt;
+line-height:115%'>A</span></b>pplication) erstellt. In diesen Dokumenten sind
+Werte für die Jahresscheiben angegeben. Es ist daher sinnvoll, die Werte unter
+BUDGETVERTEILUNG in etwa den Werten von CA oder ECA anzunähern.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>X-Achse (Laufzeit) in der <b>rechten
+Graphik</b> entsprechend dem Projekt anpassen</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>Y-Achse (Budget) in <b>beiden
+Graphiken</b> entsprechend dem Projekt anpassen</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><img width=694 height=358
+id="Grafik 115" src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image038.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><img width=945 height=318
+id="Grafik 120" src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image039.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100609"><span style='font-family:
+"Calibri",sans-serif'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Projekt bearbeiten</span></a></h1>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100610"><span style='font-family:
+"Calibri",sans-serif'>4.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Gewerkemappen
+bearbeiten</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Jede einzelne Gewerkemappe/jedes
+PSP-Element wird nacheinander bearbeitet.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><b>Budgets</b> <b>anpassen</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Differenz zwischen
+Forecast NEW und Forecast OLD aus Restbudget herausnehmen. Im gezeigten
+Beispiel wird die berechnete Differenz zwischen Forecast NEW und Forecast OLD in
+Höhe von --4841 vom Restbudget abgezogen.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=1010
+height=437 id="Grafik 129"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image040.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Ergebnis:
+Differenz zwischen Forecast OLD und NEW ist „0“, Restbudget niedriger. Forecast
+OLD und Forecast NEW sind wieder gleich.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><b>Restbudget</b> <b>verteilen</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=520
+height=241 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image041.jpg"
+align=left hspace=12>Entsprechend Terminplan oder eigener Einschätzung wird das
+Restbudget auf den/die voraussichtlichen Monat/e über eine prozentuale
+Verteilung aufgeteilt. Eine prozentuale Aufteilung verringert den
+Bearbeitungsaufwand. Selbstverständlich können Obligos und Restbudget aber auch
+mit festen Beträgen verteilt werden.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><b>Obligos</b> <b>verteilen</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Entsprechend
+Terminplan oder eigener Einschätzung wird das/die Obligo/s auf den/die
+voraussichtlichen Monat/e verteilt.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=565
+height=112 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image042.jpg"
+align=left hspace=12>Im dargestellten Beispiel wird das Obligo einer Bestellung
+direkt mit der Verteilung des Restbudgets verknüpft. Es wird empfohlen, nicht
+mit festen Werten in der Verteilung zu arbeiten, da dies den Bearbeitungsaufwand
+des Projektes deutlich erhöht.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=629
+height=263 id="Grafik 132"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image043.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=569
+height=208 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image044.jpg"
+align=left hspace=12>Vorteil: spätere Veränderungen des Obligos werden beim
+Aktualisieren automatisch, ohne nochmalige Bearbeitung, übernommen.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Nach dem
+vorgenannten Beispiel alle Gewerkemappen bearbeiten, Ausnahme Contingency.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=638
+height=396 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image045.jpg"
+align=left hspace=12><b>Option</b>: Markierung setzen „WBS finished“</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Erzeugt eine
+Markierung in <b>OVERVIEW</b>. Das erleichtert die Orientierung in der
+Bearbeitung, wenn ein Projekt nicht in einem Zug bearbeitet werden kann.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100611"><span style='font-family:
+"Calibri",sans-serif'>4.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Schaltflächen
+Sprungfunktionen</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Click auf die
+Schaltflächen bewirkt den direkten Sprung in die jeweiligen EXCEL-Blätter</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span lang=EN-US>In
+OVERVIEW und CASH FLOW</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=459
+height=210 id="Grafik 135"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image046.jpg"> <img width=450
+height=206 id="Grafik 136"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image047.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>In der
+Gewerkemappe</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=678
+height=306 id="Grafik 138"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image048.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=593
+height=267 id="Grafik 146"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image049.jpg"> <img width=348
+height=266 id="Grafik 36"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image050.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100612"></a><a
+name="_Ref344968131"><span style='font-family:"Calibri",sans-serif'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Gewerkemappe Contingency
+erstmalig bearbeiten.</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Die nachfolgenden
+Ausführungen setzen voraus, dass die Grundsätze des <b>Contingency</b>-Rundowns
+bekannt sind.</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;line-height:normal'><img
+width=577 height=261 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image051.jpg"
+align=left hspace=12>1. Schritt<br>
+Falls die Formeln versehentlich nicht gelöscht werden, wird in der weiteren
+Bearbeitung ein Zirkelbezug erzeugt.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Annahme für das
+Beispiel:</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Projektlaufzeit 12 Monate</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Beginn des Rundown Dezember 2012</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Höhe der Contingency 180.000 €</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Wert der <b>Contingency</b>
+(180.000) durch Anzahl der Monate (12) der Projektlaufzeit teilen.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=342
+height=190 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image052.jpg"
+align=left hspace=12>Formel vom 1. bis letzten Monat der Laufzeit ziehen</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=556
+height=113 id="Grafik 94"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image053.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Die Formel der <b>Contingency</b>-Monatsbeträge
+umwandeln in Festbeträge. Anmerkung: in der obigen Grafik ist bereits ein
+Rundown über 3 Monate gelaufen.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=542
+height=230 id="Grafik 22"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image054.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100613"><span style='font-family:
+"Calibri",sans-serif'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Contingency
+Rundown</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Für jeden im
+Projektlauf abgelaufenen Monat entweder den Monatsbetrag löschen, oder
+–&nbsp;wie im Beispiel&nbsp;&#8209; den Wert in Text umwandeln und die Zelle
+farblich markieren. Im gezeigten Beispiel unten sind 3 Monate (von November bis
+zum „Actual Month“) abgelaufen. Sie sind als Text markiert und werden somit in
+der Summenformel ignoriert.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-align:justify;text-justify:inter-ideograph;text-indent:
+-35.45pt;line-height:normal'><img width=629 height=128 id="Grafik 95"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image055.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100614"><span style='font-family:
+"Calibri",sans-serif'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Projekt
+aktualisieren – QUELL-Datei</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>QUELL-Datei mit
+BexAnalyzer öffnen (Absatz 2, Quelldatei anlegen, Seite 10)</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=475
+height=104 id="Grafik 33"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image056.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Variablenfenster
+aufrufen</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=606
+height=130 id="Grafik 34"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image057.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Ggf. wieder
+anmelden</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Periode um einen
+Monat weiter setzen, &gt; OK</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=486
+height=158 id="Grafik 43"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image058.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>QUELLE unter
+gleichem Namen speichern und schließen</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100615"><span style='font-family:
+"Calibri",sans-serif'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Projekt
+aktualisieren – MASTER-Datei</span></a></h1>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100616"><span style='font-family:
+"Calibri",sans-serif'>8.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Control-Datei</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Arbeitsversion
+(I.xxx ….. Zwischenstand.xlsm) öffnen und aktualisieren</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=574
+height=426 id="Grafik 42"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image059.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Programmmeldung: Quelle
+wird <b>gelesen</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=781
+height=258 id="Grafik 140"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image060.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Pro Gewerkemappe
+werden veränderte Werte <b>verarbeitet</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=898
+height=325 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image061.jpg"
+align=left hspace=12></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100617"><span style='font-family:
+"Calibri",sans-serif'>8.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Diagnose Overview</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><b>Adjustment</b>:   Es
+werden die notwendigen Veränderungen des Restbudgets angezeigt.<br>
+<b><span style='color:red'>Rote Zahl</span></b><span style='color:red'> </span>=
+Restbudget kann/muss reduziert werden. Also z. B. durch neu hinzugekommene
+Bestellungen.<br>
+<b>Schwarze Zahl</b> = Restbudget kann/muss erhöht werden. Also z. B. durch
+stornierte oder reduzierte Bestellungen oder Stundenbuchungen. Im nachstehenden
+Beispiel sind die ersten vier Elemente überzogen (rote Zahl), alle anderen
+Budgets sind unterschritten (schwarze Zahl). Insgesamt wird der Forecast des
+Vormonats um 56.714€ überschritten.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=869
+height=454 id="Grafik 57"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image062.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><b>DIFFERENCE</b>    Anzeige
+der Wareneingänge in jedem PSP-Element. Voraussetzung alle Planwerte wurden aus
+dem aktuellen Monat entfernt und auf die nachfolgenden Monate verteilt.<br>
+Nach Click aus „NÄCHSTEN MONAT“ darf die Spalte DIFFERENCE keine WERTE mehr aufweisen.
+Falls doch, jede Gewerkemappe auf Fehler kontrollieren. Diese können z. B. sein
+ein übersehener Planwert aus einem Vormonat oder ein nicht verteiltes Obligo
+(sh. Seite 46, 8.6, Worauf muss ich achten).</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100618"></a><a
+name="_Ref346778611"><span style='font-family:"Calibri",sans-serif'>8.3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Schritt 1</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>In jeder
+Gewerkemappe alle Planwerte in die nachfolgenden Monate neu verteilen. Wenn
+dies vollständig durchgeführt wurde, müssen im <b>Cash Flow</b> die Spalte des
+aktuellen Monats auf <b>0</b> stehen.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=854
+height=478 id="Grafik 24"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image063.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100619"><span style='font-family:
+"Calibri",sans-serif'>8.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Schritt 2</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Jede Gewerkemappe
+wie vorher beschrieben einzeln bearbeiten. Auf was muss geachtet werden? Wie
+vorher:</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Obligos neu verteilen</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Budgetwert kontrollieren, ggf. anpassen</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>In jeder
+Gewerkemappe sind die Veränderungen zwischen Aktualisierung und der vorherigen
+Version farblich <b><span style='color:#009900'>grün markiert</span></b>. <img
+width=929 height=419 id="Grafik 150"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image064.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><b><span
+style='color:red'>Rote Markierung</span></b>:           hier gibt es eine
+Abweichung zwischen DRACO und SAP.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:99.25pt;text-indent:-99.25pt;line-height:normal'>Mögliche Gründe:         IST
+&lt;&gt; Bestellwert; Abweichung zwischen dem in DRACO berechneten Obligo und
+dem Obligo, das aus SAP ausgelesen wird.<br>
+Abweichung zwischen Bestellwert und Rechnungswert.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><a
+name="Lösung_Obligo_bereinigen"><b>Lösung</b></a>: Bestellung in SAP auf
+Besonderheiten kontrollieren. Häufig ist in SAP das sog. <b>E</b>nd<b>l</b>iefer<b>k</b>enn<b>z</b>eichen
+gesetzt. In diesem Fall das Obligo im DRACO manuell löschen, evtl. (optional)
+ersetzen durch ein erklärendes Kürzel wie z. B. „elkz“ in der jeweiligen Gewerkemappe,
+oder Wert einfach nur löschen.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=622
+height=3 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image065.gif" align=left
+hspace=12>So sieht eine Bestellung in SAP (P86) mit gesetztem
+Endlieferkennzeichen aus.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=307
+height=182 id="Grafik 55"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image066.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100620"><span style='font-family:
+"Calibri",sans-serif'>8.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Geplante
+Bestellungen</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>DRACO hat auch die
+Möglichkeit, Bestellungen die zwar bekannt sind, aber in SAP noch nicht
+eingestellt sind, abzubilden. Wir sprechen von geplanten Bestellungen.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=629
+height=480 id="Grafik 65"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image067.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Beispiel: Im
+Knoten <b><i>DSP LE Filtration / Umbau UF K2</i></b> wird bekannt, dass noch
+ein Ersatzteilpaket für voraussichtlich 35.000,- € benötigt. Lieferant ist STS
+Steuerungstechnik. Die Angaben werden in Zeile 48 (nur gültig für dieses
+Beispiel) eingetragen.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Vor Bearbeitung:<br>
+<img width=634 height=109 id="Grafik 73"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image068.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Nach Bearbeitung:<br>
+<img width=629 height=102 id="Grafik 80"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image069.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Wenn im weiteren
+Ablauf die Bestellung in SAP eingestellt ist (im Beispiel wird die Bestellung
+neu aufgenommen in Zeile 36 [zukünftiges Ereignis, keine Darstellung im Screenshot],
+alle anderen Zeilen rutschen automatisch nach unten), muss die Buchung der
+Planung aufgelöst werden. ACHTUNG: mögliche Unterschiede zwischen dem
+endgültigen Wert der Bestellung und dem geplanten Wert berücksichtigen.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Geplante
+Bestellung auflösen:</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=686
+height=118 id="Grafik 109"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image070.jpg"></p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;line-height:normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100621"></a><a
+name="_Ref345065666"></a><a name="_Ref345065660"></a><a name="_Ref345065645"><span
+style='font-family:"Calibri",sans-serif'>8.6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></a><img width=366 height=3
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image071.gif" align=left
+hspace=12><span style='font-family:"Calibri",sans-serif'>Worauf muss ich achten</span></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><b>Gewerkemappen</b>:              In
+der Spalte „Tob e allocated“ müssen nach der Bearbeitung alle Werte auf&nbsp;„0“
+stehen</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><b>Vor Bearbeitung</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><img width=537 height=3
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image072.gif" align=left
+hspace=12></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><b>Nach
+Bearbeitung</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><b>&nbsp;</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><b>&nbsp;</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><b>&nbsp;</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><b>&nbsp;</b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><b>CASH FLOW:   </b>Planungswerte des
+aktuellen Monats stehen auf 0. </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=906
+height=530 id="Grafik 151"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image073.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><b>OVERVIEW:     </b>In RESERVE/BUDGETANPASSUNG
+stehen alle Werte auf 0, bzw. die +/- Werte heben sich auf, lediglich die
+Reduktion der Contingency wird angezeigt.<br>
+Wenn sich die Werte nicht aufheben, also ein positiver oder negativer Wert
+ausgewiesen wird, so bedeutet dies eine Veränderung des FORECAST NEW.
+Normalerweise ist die Differenz von FORECAST OLD zu FORECAST NEW eine Reduktion
+um genau den Contingency-Rundown oder um eine mit dem PL abgesprochene Budgetveränderung.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><img width=723 height=478
+id="Grafik 83" src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image074.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>CASH FLOW: jetzt Click auf NÄCHSTEN
+MONAT und OK; sh. 3.4, Cash Flow: „Nächsten Monat, Seite 21.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>Effekt:   Die Bearbeitung ist
+abgeschlossen, wenn in OVERVIEW unter DIFFERENZ keine Werte mehr stehen.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=625
+height=307 id="Grafik 86"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image075.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+39.6pt;text-indent:-21.6pt'><a name="_Toc421100622"><span style='font-family:
+"Calibri",sans-serif'>8.7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Anpassung Cost
+Summary</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Die Werte im Cost
+Summary werden automatisiert erzeugt und speisen sich primär aus der Liste der
+PSP-Elemente im Overview Spalte Q sowie der steuernden <b>Spalte FH (im
+Overview)</b>. <br>
+<span lang=EN-US>CES = </span><b><span lang=EN-US style='font-size:16.0pt'>C</span></b><span
+lang=EN-US>ost </span><b><span lang=EN-US style='font-size:16.0pt'>E</span></b><span
+lang=EN-US>stimate </span><b><span lang=EN-US style='font-size:16.0pt'>S</span></b><span
+lang=EN-US>tructure</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=503
+height=278 id="Grafik 152"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image076.jpg"> <img width=485
+height=279 id="Grafik 153"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image077.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=429
+height=225 id="Grafik 154"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image078.jpg"> </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=644
+height=1 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image079.jpg" align=left
+hspace=12>  </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=511
+height=1 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image080.jpg" align=left
+hspace=12><span lang=EN-US>Werte einfügen von CURRENT FORECAST nach PREVIOUS
+FORECAST</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=1015
+height=470 id="Grafik 157"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image081.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100623"><span style='font-family:
+"Calibri",sans-serif'>8.8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Cost Summary:
+erzeugen PMR-Datenblatt</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Die Übersicht wird
+im PMR als Grafik eingefügt.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><img width=215 height=3
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image082.gif" align=left
+hspace=12><img width=673 height=341 id="Grafik 75"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image083.gif"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100624"></a><a
+name="_Ref345058487"></a><a name="_Ref345058481"></a><a name="_Ref344973458"><span
+style='font-family:"Calibri",sans-serif'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Control-Datei
+speichern, Arbeits-und Monatsversion erzeugen</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Der Dateiname kann
+frei gewählt werden. Es empfiehlt sich jedoch, eine sog. Arbeitsversion zu
+erstellen, in der Aktualisierungen bearbeitet werden und diese zu markieren mit
+einem Textatrtribut wie z. B. „Zwischenstand“ oder „Aktuell“. Aus dieser Datei
+heraus wird dann jeweils eine Monatsversion erzeugt. </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100625"></a><a
+name="_Ref347144683"></a><a name="_Ref347144676"></a><a name="_Ref347144665"><span
+style='font-family:"Calibri",sans-serif'>10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></a><img width=435 height=1
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image084.jpg" align=left
+hspace=12><span style='font-family:"Calibri",sans-serif'>Vorbereitung des
+nächsten Monats</span></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>OVERVIEW      WERTE
+einfügen von FORECAST NEW in PREVIOUS MONTH<br>
+Die Werte des Vormonats werden benötigt, wenn vor dem Monatsende eine
+Aktualisierung durchgeführt wird. Grund: die Funktion „aktualisieren“ bewirkt,
+dass die Werte aus FORECAST NEW automatisch in FORECAST OLD geschrieben werden.
+Um den Vorgang rückgängig zu machen, werden die Werte (! – nicht STRG&#8209;V)
+aus Vormonat in FORECAST OLD eingefügt.<br>
+<br>
+</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><span lang=EN-US>Cash
+Flow        <u>Werte</u> einfügen von CURRENT PERIOD in PREVIOUS PERIOD</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=525
+height=314 id="Grafik 159"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image085.jpg"><b><span
+style='font-size:12.0pt'> </span></b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Die Zellen in den
+Actual und Forecast jeweils um ein Feld weiterziehen</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=814
+height=165 id="Grafik 12"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image086.jpg"></p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;line-height:normal'><b><span
+style='font-size:12.0pt'>Vorher                                                                                                                                                                                                                                                         Nachher<br>
+</span></b><img width=414 height=302 id="Grafik 4"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image087.jpg"> <img width=455
+height=300 id="Grafik 5"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image088.jpg"></p>
+
+<span style='font-size:11.0pt;font-family:"Calibri",sans-serif'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;line-height:normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100626"><span style='font-family:
+"Calibri",sans-serif'>11.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Zusammenfassung
+der Arbeitsschritte:</span></a></h1>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:200%'><b><span
+style='font-size:12.0pt;line-height:200%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt;line-height:200%;color:#E36C0A;
+background:yellow'>QUELL-Datei</span></b><b><span style='font-size:12.0pt;
+line-height:200%;color:#E36C0A'> </span></b><b><span style='font-size:12.0pt;
+line-height:200%'>aktualisieren, speichern, schließen</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:200%'><b><span
+style='font-size:12.0pt;line-height:200%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt;line-height:200%;color:#E36C0A;
+background:yellow'>ARBEITSDATEI</span></b><b><span style='font-size:12.0pt;
+line-height:200%'> öffnen, aktualisieren</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:200%'><b><span
+style='font-size:12.0pt;line-height:200%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt;line-height:200%;color:#E36C0A;
+background:yellow'>Gewerkemappen </span></b><b><span style='font-size:12.0pt;
+line-height:200%'>bearbeiten</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:70.9pt;text-indent:-35.45pt'><b><span
+style='font-size:12.0pt;line-height:115%'>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt;line-height:115%'>Obligos
+neu verteilen. Die Planungswerte müssen aus dem aktuellen Monat entfernt werden
+und auf die restlichen Monate verteilt werden.</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:70.9pt;text-indent:-35.45pt'><b><span
+style='font-size:12.0pt;line-height:115%'>b.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt;line-height:115%'>RESTBUDGET
+anpassen</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:70.9pt;text-indent:-35.45pt'><b><span
+style='font-size:12.0pt;line-height:115%'>c.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt;line-height:115%'>CONTINGENCY
+reduzieren</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:70.9pt;text-indent:-35.45pt'><b><span
+style='font-size:12.0pt;line-height:115%'>d.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt;line-height:115%;color:red'>Ziel</span></b><b><span
+style='font-size:12.0pt;line-height:115%'> (in Gewerkemappen):    die Spalte
+NOCH ZU VERTEILEN enthält keine Werte</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:70.9pt;text-indent:-35.45pt'><b><span
+style='font-size:12.0pt;line-height:115%'>e.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt;line-height:115%;color:red'>Ziel</span></b><b><span
+style='font-size:12.0pt;line-height:115%'> (in Overview):       die Änderungen
+in Spalte RESERVE/BUDGETANPASSUNG heben sich auf, lediglich die Contingency ist
+reduziert.</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:70.9pt;text-indent:-35.45pt'><b><span
+style='font-size:12.0pt;line-height:115%'>f.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt;line-height:115%'>Ziel in
+CASH FLOW:      die Spalte ACTUAL MONTH enthält keine Werte.<br>
+<br>
+</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:150%'><b><span
+style='font-size:12.0pt;line-height:150%'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt;line-height:150%'>CASH FLOW:
+Click auf <span style='color:#E36C0A;background:yellow'>NÄCHSTEN MONAT</span>,
+OK.<br>
+Effekt: die IST-Werte des aktuellen Monats werden im CASH FLOW hart in die
+jeweilige Zeile jeden PSP-Elementes im Cash Flow eingetragen.<br>
+NÄCHSTEN MONAT nur dann, wenn tatsächlich auf den nächsten Monat gewechselt
+werden soll. Gilt NICHT, wenn z. B. wenn man sich einen Überblick während des
+laufenden Monats verschaffen will.</span></b></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:14.4pt;margin-left:35.45pt;text-indent:-35.45pt;line-height:200%'><b><span
+style='font-size:12.0pt;line-height:200%'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><b><span style='font-size:12.0pt;line-height:200%;color:#E36C0A;
+background:yellow'>Nächsten Monat vorbereiten</span></b></p>
+
+<span style='font-size:11.0pt;font-family:"Calibri",sans-serif'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100627"><span style='font-family:
+"Calibri",sans-serif'>12.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Funktionen und
+Anzeigen</span></a></h1>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100628"><span style='font-family:
+"Calibri",sans-serif'>12.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></a><img width=619 height=3
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image089.gif" align=left
+hspace=12><span style='font-family:"Calibri",sans-serif'>Funktion PSP-Struktur</span></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Im Zuge einer
+Projektabwicklung wird häufig der Fall eintreten, dass die existierende
+PSP-Struktur erweitert werden muss. Diese Erweiterung wird an erster Stelle in
+SAP abgebildet. DRACO enthält eine Prüfroutine, welche die in DRACO vorhandene
+PSP-Struktur mit der aktuellen SAP-Struktur vergleicht. Bei unterschiedlicher
+Struktur gibt DRACO einen Texthinweis (CAUTION …) und erzeugt eine neue
+Schaltfläche, UPDATE WBS STRUCTURE:<br>
+Wenn eine Anpassung bereits vorher durchgeführt werden soll, so muss diese
+absolut gleichlautend in den Blättern „Overview“ und „Cash Flow“ durchgeführt
+werden. Diese manuelle Änderung muss sehr sorgfältig durchgeführt werden, da es
+kritische Programmfunktionen von DRACO beeinflusst.<br>
+<i><br>
+<b>Es wird empfohlen, eine manuelle Änderung nur bei absolut sicherem Umgang
+mit DRACO durchzuführen.</b></i></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Start der Änderung
+in der PSP-Struktur.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Programmeldungen</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=472
+height=227 id="Grafik 78"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image090.jpg"><img width=406
+height=226 id="Grafik 79"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image091.jpg">  </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=317
+height=243 id="Grafik 30"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image092.jpg"> Ergebnis: das
+PSP-Element „Contingency – Test“ wurde eingefügt in Overview, Cash Flow und als
+neue Gewerkemappe (Sheet).</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=650
+height=1 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image093.jpg" align=left
+hspace=12>NICHT VERGESSEN:</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100629"></a><a
+name="_Ref417039159"><span style='font-family:"Calibri",sans-serif'>12.2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></a><img
+width=813 height=1 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image094.jpg"
+align=left hspace=12><span style='font-family:"Calibri",sans-serif'>Funktion Yellow
+Budget</span></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Definition: Das
+Projekt XY hat einen Wert gem. Kostenschätzung von 3,4 Mio€, davon sind
+genehmigt (Partial Green) 400 T€ als Planungsbudget. Die Differenz,
+unterschieden nach Invest und Kosten wird in den Blättern <i>GTY INVEST</i> und
+<i>GTY COST</i> dargestellt. Die Werte der beiden Zeilen GTY werden manuell
+eingegeben. Die Terminschiene sowie die Budgetverteilung muss manuell angepasst
+werden.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<span style='font-size:11.0pt;font-family:"Calibri",sans-serif'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+61.2pt;text-indent:-25.2pt'><a name="_Toc421100630"><span style='font-family:
+"Calibri",sans-serif'>12.2.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Anpassungen im
+CashFlow</span></a></h1>
+
+<p class=MsoNormal><img width=707 height=503 id="Grafik 9"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image095.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+61.2pt;text-indent:-25.2pt'><a name="_Toc421100631"><span style='font-family:
+"Calibri",sans-serif'>12.2.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Anpassungen in
+GTY-Invest und –Cost (identisch)</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=938
+height=373 id="Grafik 11"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image096.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Zu Beginn eines
+Projektes mit einem YELLOW-Anteil werden die Kurven für BUDGET und PLANUNG idR
+sehr ähnlich oder auch vollständig überlappend sein. Dies wird sich jedoch im
+weiteren Verlauf ändern. </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=1011
+height=328 id="Grafik 18"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image097.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Nicht vergessen:
+mit Genehmigung des FullGreen werden alle Werte YELLOW gelöscht.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=1010
+height=390 id="Grafik 21"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image098.jpg"></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100632"><span style='font-family:
+"Calibri",sans-serif'>12.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Funktion Change
+Register</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=284
+height=3 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image099.gif" align=left
+hspace=12><img width=669 height=186 id="Grafik 14"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image100.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Es werden
+Änderungen (<b>CO</b>) und Budget Transfers (<b>BT</b>) eingetragen. Die
+Eingaben werden automatisiert im Overview eingetragen und verändern den Wert
+des Controls Budget. Um den vorgegebenen Bereich (Screenhot oben Zeile 6 bis 8)
+zu erweitern, Cursor in eine freie Zeile setzen (hier Zeile 8) und STRG[+]
+drücken. <b><i>Keine</i></b><i> ganzen Zeilen markieren, kopieren und einfügen</i>.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>ACHTUNG:       die
+jeweiligen Gewerkemappen müssen natürlich angepasst werden. Häufig ist die
+Veränderung des Restbudgets ausreichend.<br>
+<br>
+<b>BT</b> führt zur <b>Erhöhung</b> des Wertes des PSP-Elementes, das den
+Transfer empfängt <b>und zur Senkung</b> des Wertes des PSP-Elementes, dem der
+Transfer entnommen wird.<br>
+<br>
+<b>CO</b> führt nur zur <b>Erhöhung</b> des Wertes des PSP-Elementes, das den Änderungswert
+empfängt.</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100633"><span style='font-family:
+"Calibri",sans-serif'>12.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Funktion Controls
+Budget</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Zeigt den Wert des
+SAP-Budgets unter Berücksichtigung von ggf. eingetragenen Änderungen.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=514
+height=3 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image101.gif" align=left
+hspace=12>Falls der neue Forecastwert eines PSP-Elementes höher sein sollte,
+als das Controls Budget (Überziehung), so wird der Wert des Controls Budget rot
+markiert.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><b><span
+style='font-size:12.0pt'>&nbsp;</span></b></p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100634"><span style='font-family:
+"Calibri",sans-serif'>12.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Funktion
+Sekundärstruktur (WP)</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Zusätzliche Abrechnungseinheiten
+– auch Work Packages (WPs) genannt, können in einer zweiten Strukturebene
+separat zusammengestellt werden – über alle PSP-Elemente hinweg.
+Anwendungsgebiete ist z. B. eine Kostenermittlung für umfangreiche CRs,
+Bauabschnitte, etc.</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'><img width=621 height=3
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image102.gif" align=left
+hspace=12>Derzeit können 30 solcher Sekundärelemente parallel verwaltet/angelegt
+werden. Die Darstellung der WPs beschränkt sich im Overview auf Darstellung des
+Bestellwertes (Ordered), des Projekt-IST (Actual) und des Obligos (Remaining).</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'>Basis für die Zusammenführung
+in WPs sind einzelne Bestellungen und deren Positionen. Die Definition welche
+Bestellung ist welches WP erfolgt in den jeweiligen Gewerkemappen.</p>
+
+<p class=MsoListParagraph style='margin-bottom:14.4pt;text-indent:-18.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Einblenden
+der Sekundärstruktur in Mappe „Overview“:</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'>Hier die Namen der WPs und
+deren Budget manuell einpflegen, im Screenshot a – b –c, usw.</p>
+
+<p class=MsoListParagraph style='margin-bottom:14.4pt;text-indent:-18.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Danach
+können in jeder einzelnen Gewerkemappe in Spalte B die vorher definierten WPs
+selektiert und damit zu der/den Bestellung/en zugeordnet werden.<br>
+Einblenden der WP-Spalte</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'><img width=519 height=457
+id="Grafik 37" src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image103.jpg"></p>
+
+<p class=MsoListParagraph style='margin-bottom:14.4pt;text-indent:-18.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Die
+Nutzung von WPs erzeugt automatisch eine neue Übersicht – <b><i>WP Pivot</i></b><br>
+Es werden alle Bestell- und IST-Wert angezeigt zuzüglich einer ggf. vorhandenen
+Planung.</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'><img width=793 height=490
+id="Grafik 40" src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image104.jpg"></p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'><img width=229 height=3
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image105.gif" align=left
+hspace=12>Funktion Vormonat</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>Wenn ein Projekt <b><i>mehrmals in
+einem Monat </i></b>aktualisiert wird, werden stets die Werte der <b><i>letzten
+Aktualisierung</i></b> aus FORECAST NEW in FORECAST OLD hart eingetragen. Um
+diese Funktion zurückzusetzen, die Werte aus VORMONAT in FORECAST OLD kopieren.</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'>Sh. auch Abschnitt 10,
+Vorbereitung des nächsten Monats, Seite 55.</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100635"><span style='font-family:
+"Calibri",sans-serif'>12.6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Funktion
+Lieferantenauswertung</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'><span style='position:relative;
+z-index:-1895840768;left:-7px;top:0px;width:1070px;height:4px'><img width=856
+height=3 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image106.gif"></span><br
+clear=ALL>
+Pivottabelle mit Anzeige aller Lieferanten und deren innerhalb des Projektes
+ausgelösten Bestellungen und Verträge.</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100636"><span style='font-family:
+"Calibri",sans-serif'>12.7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Funktion „LIST ALL
+BOOKINGS“</span></a></h1>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;line-height:normal'>Im
+Einzelfall kann es notwendig sein, bestimmte Buchungsdetails eines
+PSP-Elementes zu prüfen. Die Funktion „List ALL BOOKINGS“ erstellt aus der
+QUELLE eine Komplettliste aller Buchungen einer einzelenen Bestellung oder
+wahlweise auch alle Buchungen zum PSP-Element.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=779
+height=411 id="Grafik 46"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image107.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=189
+height=3 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image108.gif" align=left
+hspace=12><img width=629 height=179 id="Grafik 97"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image109.jpg"></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>WICHTIG:         Den
+Datenauszug beim Schließen NICHT SPEICHERN.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100637"><span style='font-family:
+"Calibri",sans-serif'>12.8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Anzeige Freie
+Mittel</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>Darstellung aller nicht verplanten
+Budgets. </p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-align:justify;text-justify:inter-ideograph;text-indent:-35.45pt'><a
+name="_Toc421100638"><span style='font-family:"Calibri",sans-serif'>12.9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-family:"Calibri",sans-serif'>Gewerkemappe: Anzeige Werkstattaufträge
+(WA)</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Werkstattaufträge
+sind können sich für das Projektcontrolling zu wahren „Tretminen“ entwickeln.<br>
+Grund: es geschieht häufiger, dass Werkstattaufträge die eingestellten Schätzwerte
+deutlich überschreiten. Buchungen mit dem doppelten Wert der Planung sind keine
+Seltenheit. Innerhalb der WAs werden interne als auch externe Leistungen (z.B. Bestellungen)
+erfasst. Da es keinerlei Beschränkung der Buchungen der Höhe nach gibt, können
+WAs ohne Rücksprache oder Ankündigung beliebig überzogen werden. Deshalb wurde der
+etwas drastische Begriff der „Tretmine“ gewählt, um die kritische Position von
+WAs innerhalb eines Projektes zu beschreiben.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>In DRACO werden
+WAs nur dargestellt. Die Buchungen (interne und externe Leistungen) werden, wie
+alle anderen Buchungen im Projekt, unterhalb der Zeile 13 erfasst. Die
+Darstellung der WAs, im Screenshot ab Zeile 47, beschränkt sich auf</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:14.4pt;text-indent:
+-18.0pt;line-height:normal'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Plankosten;
+Wert für die <i><u>Planung</u></i>. Kann sich bis zum Abschluss des WA
+verändern.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:14.4pt;text-indent:
+-18.0pt;line-height:normal'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>Schätzkosten;
+Wert für die <b>Schätzung</b>. Kann sich bis zum Abschluss des WA <i><u>nicht</u></i>
+verändern.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:14.4pt;text-indent:
+-18.0pt;line-height:normal'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Ampelfunktion; vergleicht das IST mit den <b>Schätzkosten</b>. <br>
+<img width=629 height=182 id="Grafik 70"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image110.jpg"></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:14.4pt;text-indent:-18.0pt;
+line-height:normal'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:14.0pt;color:#00B050'>GRÜN</span></b>                  IST
+entspricht bis &lt;90% des Schätzwertes<br>
+<b><span style='font-size:14.0pt;color:#FFCC00'>GELB</span></b>-                   IST
+entspricht bis 90 bis 100% des Schätzwertes<br>
+<b><span style='font-size:14.0pt;color:red'>ROT</span></b>-                     IST
+entspricht ab &gt;100% des Schätzwertes oder Überziehung</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=706
+height=3 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image111.gif" align=left
+hspace=12>Spätestens bei ROT empfiehlt es sich, den WA umgehend, ggf. auch ohne
+Rücksprache, zu schließen. Buchungen verringern immer das Restbudget. Somit
+sollte der Wert eines WA bzw. dessen Obligo immer durch den Wert des
+Restbudgets abgedeckt sein. Andernfalls droht eine Veränderung/Erhöhung des
+Forecasts. Innerhalb von Investprojekten empfiehlt es sich, externe
+Bestellungen innerhalb von WAs nicht zuzulassen (ausgenommen Bagatellbeträge).</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>Beispiel des
+Screenshots:             Ein WA mit der Nr. 4023947 wurde in SAP eingestellt.
+Plan- und Schätzwert sind identisch; 2.445,- €. Im Lauf der Abarbeitung könnte
+sich der Planwert verändern. Die gebuchten Leistungen im Januar sind in Zeile
+23 erfasst und im Restbudget abgezogen (neu: 166.361€). Die Ampelfunktion zeigt
+<b><span style='color:#00B050'>GRÜN</span></b>. Das WA-Obligo ist durch das
+Restbudget abgedeckt.</p>
+
+<span style='font-size:11.0pt;font-family:"Calibri",sans-serif'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100639"><span style='font-family:
+"Calibri",sans-serif'>12.10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Overview: Anzeige Werkstattaufträge</span></a></h1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'><img width=785
+height=3 src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image112.gif" align=left
+hspace=12>Sammelanzeige aller Werkstattaufträge eines Projektes mit Status.
+Aktuelle Daten werden erst nach ACTUALIZE WORKSHOP angezeigt.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:14.4pt;
+margin-left:35.45pt;text-indent:-35.45pt;line-height:normal'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100640"><span style='font-family:
+"Calibri",sans-serif'>12.11.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></a><img width=487 height=3
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image113.gif" align=left
+hspace=12><span style='font-family:"Calibri",sans-serif'>Anzeige Jahresscheiben</span></h1>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'>Im Cash Flow ab Spalte BH
+werden kumuliert die Jahresscheiben angezeigt, auch aufgeteilt nach Invest und
+Kosten. Diese Angaben werden z. B. abgefragt von Fachbereichen oder dem
+Controlling der Werkleitung für das Investmonitoring.</p>
+
+<span style='font-size:11.0pt;font-family:"Calibri",sans-serif'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'>&nbsp;</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100641"></a><a
+name="_Ref377452421"></a><a name="_Ref377452414"></a><a name="_Ref377452405"></a><a
+name="_Ref377452403"><span style='font-family:"Calibri",sans-serif'>12.12.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Calibri",sans-serif'>Anzeige</span></a><span
+style='font-family:"Calibri",sans-serif'> bei fehlenden/stornierten Belegen</span></h1>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'>Der Wegfall von erfassten
+Belegen, also z. B. die Stornierung einer Bestellung, oder eine Umbuchung, wird
+angezeigt während eines Aktualisierungsvorganges.</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;text-align:justify;text-justify:
+inter-ideograph'><img width=829 height=393 id="Grafik 76"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image114.jpg"></p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;text-align:justify;text-justify:
+inter-ideograph'>Die Anzeige, in welchem PSP-Element eine Stornierung
+aufgetreten ist, erfolgt mit dem Symbol <img width=24 height=26 id="Grafik 102"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image115.jpg"> im Overview.</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;text-align:justify;text-justify:
+inter-ideograph'><img width=675 height=530 id="Grafik 54"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image116.jpg"></p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;text-align:justify;text-justify:
+inter-ideograph'>Bearbeitung:      in die entsprechende Gewerkemappe springen. </p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;text-align:justify;text-justify:
+inter-ideograph'><img width=514 height=252 id="Grafik 107"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image117.jpg"></p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;text-align:justify;text-justify:
+inter-ideograph'>Ergebnis:</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;text-align:justify;text-justify:
+inter-ideograph'> <img width=540 height=217 id="Grafik 106"
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image118.jpg"></p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt;text-align:justify;text-justify:
+inter-ideograph'>Die Bestellungen müssen nicht gelöscht werden, sie können auch
+in der Gewerkemappe verbleiben. Jedoch meldet dann DRACO bei jeder neuen Aktualisierung,
+dass Bestellungen nicht vorhanden sind. Sh. Auch Absatz 12.12, Seite 78, Anzeige</p>
+
+<h1 style='margin-top:24.0pt;margin-right:0cm;margin-bottom:14.4pt;margin-left:
+35.45pt;text-indent:-35.45pt'><a name="_Toc421100642"><span style='font-family:
+"Calibri",sans-serif'>12.13.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></a><img width=624 height=3
+src="Manual%20DRACO%203.5%20GTY%20v2-Dateien/image119.gif" align=left
+hspace=12><span style='font-family:"Calibri",sans-serif'>Fortschrittsanzeige</span></h1>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'>Ein farblich abgesetzter Balken
+markiert optisch das aktuelle IST im Vergleich zum FORECAST NEW. Sehr gut
+geeignet, um einen schnellen Überblick zu erhalten, besonders bei der Planung.</p>
+
+<p class=MsoNormal style='margin-bottom:14.4pt'>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
